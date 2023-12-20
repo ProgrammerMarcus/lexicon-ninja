@@ -9,6 +9,20 @@ body {
   box-sizing: border-box;
 }
 
-img {
-  transform: rotate(20deg) translate(20px, 20px);
+.circle {
+  border-radius: 100%;
+  background-color: salmon;
+  height: 100px;
+  aspect-ratio: 1;
+  color: white;
+  display: grid;
+  place-items: center;
+  margin: 60px auto;
+  cursor: pointer;
+  transition: background 1s, transform 1s 1s ease-in;
+}
+
+.circle:hover {
+  background-color: pink;
+  transform: rotate(360deg);
 }

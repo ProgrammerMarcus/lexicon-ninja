@@ -60,8 +60,24 @@ html, body{
   animation-duration: 4s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(1,.01,0,1.02);
-  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.cloud {
+  position: absolute;
+}
+
+.cloud:first-child {
+  width: 200px;
+  top: 120px;
+  opacity: 0.5;
+  animation: wind 80s -20s linear infinite reverse;
+}
+
+.cloud:last-child {
+  width: 300px;
+  animation: wind 50s linear infinite reverse;
 }
 
 /*// KEYFRAMES //*/
@@ -75,7 +91,12 @@ html, body{
   }
 }
 
-
-
-
+@keyframes wind {
+  from {
+    left: -300px
+  }
+  to {
+    left: 100%;
+  }
+}
 

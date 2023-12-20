@@ -52,6 +52,18 @@ html, body{
   animation-timing-function: linear;
 }
 
+.luigi {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+
 /*// KEYFRAMES //*/
 
 @keyframes drive {
